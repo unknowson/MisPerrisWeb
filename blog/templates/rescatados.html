@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% load static %} {% block content %} {% for resc in lista %} {% load pwa %} {% progressive_web_app_meta %}
+
+
+<div class="PerrosResc">
+    <div class="Perros">
+        <div class="nombre"> Nombre: {{ resc.nombre }} </div> <span class="infoResc">{{ resc.raza_dominante }} | {{ resc.estado }}</span>
+        <img src="{{ resc.fotografia }}" alt="foto {{ resc.nombre }}" />
+        <span class="infoResc Fondo">{{ resc.descripcion }}</span>
+    </div>
+</div>
+
+
+<hr> {% endfor %} {% endblock %}

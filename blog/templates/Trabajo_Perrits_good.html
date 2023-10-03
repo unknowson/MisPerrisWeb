@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load static %} {% block content %} {% load pwa %} {% progressive_web_app_meta %}
+
+<div id="cuerpo">
+    <div id="izquierda">
+        <p class="titulo end">RESCATE</p>
+        <p class="subtitulo end">ETAPA UNO</p>
+        <p class="linea end"></p><br>
+        <p class="pinfo end  ">Rescatamos perros en situacion de peligro y/o abandono.Los rehabilitamos y los preparamos para buscarles un hogar.
+
+        </p>
+        <br><br>
+        <img class="rescate-crow end" src="{% static 'img/rescate.jpg' %}" alt="crowfunding">
+    </div>
+    <div id="derecha">
+        <img class="rescate-crow start" src="{% static 'img/crowfunding.jpg' %}" alt="crowfunding">
+        <p class="titulo start">CROWFUNDING</p>
+        <p class="subtitulo start">FINANCIAMIENTO</p>
+        <p class="linea start"></p><br>
+        <p class="pinfo start ">sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para segur ayudando.
+
+        </p>
+        <br><br>
+        <button id="campañas">CAMPAÑAS</button>
+
+    </div>
+
+</div>
+<div id="Rescatados">
+
+
+    <div id="oso">
+
+        <a data-fancybox="gallery" href="{% static 'rescatados/Chocolate.jpg' %}"><img src="{% static 'rescatados/Chocolate.jpg' %}"></a>
+        <a data-fancybox="gallery" href="{% static 'rescatados/Bigotes.jpg' %}"><img src="{% static 'rescatados/Bigotes.jpg' %}"></a>
+        <a data-fancybox="gallery" href="{% static 'rescatados/Maya.jpg' %}"><img src="{% static 'rescatados/Maya.jpg' %} "></a>
+        <a data-fancybox="gallery" href="{% static 'rescatados/Wifi.jpg' %}"><img src="{% static 'rescatados/Wifi.jpg' %}"></a>
+        <a data-fancybox="gallery" href="{% static 'rescatados/Pexel.jpg' %}"><img src="{% static 'rescatados/Pexel.jpg' %}"></a>
+        <a data-fancybox="gallery" href="{% static 'rescatados/Luna.jpg' %}"><img src="{% static 'rescatados/Luna.jpg' %}"></a>
+    </div>
+
+
+
+</div>
+{% endblock %}
